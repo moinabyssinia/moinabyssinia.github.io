@@ -2,3 +2,19 @@
 body {
     padding-top: 75px;
 }
+
+.description {
+    line-height: 1.84em;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Mukta Malar';
+}
+
+
+span {
+    text-align: right;
+}
+
+.jumbotron {
+    padding: 20px;
+}

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- mt: add stylesheet -->
     <link rel="stylesheet" type="text/css"  href="about.css">
+    <!-- adding font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap" rel="stylesheet">
     <!-- mt: adding font awesome link -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 </head>
@@ -105,33 +107,38 @@
         <!-- add jumbotron -->
         <div class="jumbotron">
             
-            <h1>About Me</h1>
+            <h1> {a few words about me ...}</h1>
+            <p>“If you can't fly then run, if you can't run then walk, if you can't walk then crawl, but whatever you do you have to keep moving forward.”</p> <span >― Martin Luther King Jr.</span>
         </div>
 
         <!-- defining the grid system for the images -->
         <div class="row">
             <!-- first row -->
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="thumbnail">
-                    <div class="image image1"></div>
-
+            <div class="col-lg-4 col-sm-4 col-xs-4">
+                <div class="thumbnail portrait">
+                    <!-- use double period if the file is more than one
+                    directory away -->
+                    <img src="../img/LinkedIn_Portrait.jpg" alt="">
                 </div>
 
             </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="thumbnail">
-                    <div class="image image2"></div>
+            <div class="col-lg-8 col-sm-8 col-xs-8">
+                <div class="thumbnail description">
+                    <p><strong>These are the things that fascinate me</strong></p>
+                    <ul>
+                        <li>The Love of God</li>
+                        <li>Machine Learning</li>
+                        <li>Time series analysis</li>
+                        <li>Probabilistic and Statistical thinking</li>
+                        <li>Tides and waves</li>
+                        <li>Classical Music (Piano Concerto No.4 - Beethoven)</li>
+                        <li>Jamming Accousitc Guitar</li>
+                        <li>Web development</li>
+                        <li>World History</li>
 
-                </div>
+                    </ul>
 
-            </div>
-            <div class="col-lg-4 col-sm-6 col-xs-12">
-                <div class="thumbnail">
-                    <div class="image image3">
-                    </div></div>
-            </div>
-
-            
+                </div>            
     </div>
     
 

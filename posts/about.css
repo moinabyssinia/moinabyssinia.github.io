@@ -1,0 +1,4 @@
+/* to create buffer between navbar and body */
+body {
+    padding-top: 75px;
+}

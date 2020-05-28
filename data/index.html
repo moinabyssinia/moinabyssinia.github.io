@@ -6,6 +6,10 @@
     <script src="jquery-2.1.1.min.js"></script> 
   <style>
     #map{ height: 100% }
+
+    h2 {
+      margin-bottom: 0px;
+    }
   </style>
 </head>
 <body>
@@ -18,7 +22,9 @@
   // in the setView the first two values are lat and lon
   // the last number is the level of zoom
   var map = L.map('map', {
-    zoomDelta: 0.5
+    zoomDelta: 5,
+    //maxBounds: bounds,
+    //maxBoundsViscosity: 0.0
   }).setView([20, 0], 2);
 
   // load a tile layer
@@ -27,19 +33,18 @@
   }).addTo(map);
 
 
-
   // load GeoJSON from an external file
   $.getJSON("20cr_lrreg_kfold.geojson",function(data){
     var surgeIcon = L.icon({
       iconUrl: 'circle-48.png',
-      iconSize: [10, 10], // size of the icon
+      iconSize: [13, 13], // size of the icon
     });
     
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data, {
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng,{icon: surgeIcon});
-        marker.bindPopup( "<dt><h2>Station Metadata:</h2></dt>" + '<br/>' +  "<strong>Station Name:</strong>  " +feature.properties.tg + '<br/>' + "<strong>Longitude:</strong>  " +feature.properties.lon  + '<br/>' + "<strong>Latitude:</strong>  " +feature.properties.lat + '<br/>' + "<strong>Correlation:</strong>  " +feature.properties.corrn + '<br/>' + "<strong>RMSE (m):</strong>  " +feature.properties.rmse);
+        marker.bindPopup( "<h2>Station Metadata:</h2>" + '<hr/>' +  "<strong>Station Name:</strong>  " +feature.properties.tg + '<br/>' + "<strong>Longitude:</strong>  " +feature.properties.lon  + '<br/>' + "<strong>Latitude:</strong>  " +feature.properties.lat + '<br/>' + "<strong>Correlation:</strong>  " +feature.properties.corrn + '<br/>' + "<strong>RMSE (m):</strong>  " +feature.properties.rmse);
         return marker;
       }
     }).addTo(map);

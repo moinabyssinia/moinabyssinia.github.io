@@ -37,3 +37,15 @@ hr {
     border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
+
+.navbar-brand {
+    margin-right: 30px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+.nav-link[href = "./posts/about.html"] {
+    margin-left: 60px;
+}

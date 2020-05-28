@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moin-Abyssinia</title>
-    <!-- mt: bootstrap cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- mt: new version of bootstrap cdn -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
+   crossorigin="anonymous">
+   <!-- mt: add stylesheet -->
+   <link rel="stylesheet" type="text/css"  href="moinAbyssinia.css">
+
     <!-- mt: add stylesheet -->
     <link rel="stylesheet" type="text/css"  href="moinAbyssinia.css">
     <!-- mt: adding font awesome link -->
@@ -21,85 +25,71 @@
     <!-- to change color use navbar-inverse -->
     <!-- mt: to fix the navbar in place, use navbar-fixed-top -->
     <!-- mt: navbar might block content -> use padding top for the body -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <!-- mt: adding the contents of navbar 
-            in a container to center it 
-            it's better not to apply it 
-            to the navbar itself-->
-        <div class="container">
-            <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
-                <div class="navbar-header">
-                  <!-- mt: getting the hamburger -->
-                  <!-- mt: data-target should match the id inside the div with class = "collapse navbar-collapse" -->
-                  <button type="button" class="navbar-toggle collapsed" 
-                  data-toggle="collapse" data-target="#bs-image-gallery" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </button>
-                  <!-- mt: anchor tag for the home page -->
-                  <!-- mt: also add glyphicon next to the brand name  - from FontAwesome-->
-                  <a class="navbar-brand" href="http://moinabyssinia.github.io"><i class="fas fa-book"></i>                   Moin-Abyssinia</a>
-                </div>
-            
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <!-- the following div will collapse when we hit mobile size -->
-                <div class="collapse navbar-collapse" id="bs-image-gallery">
-                  <ul class="nav navbar-nav">
-                    <!-- mt: if you want to toggle the page as active, just use class="active" inside the li -->
-                    <li><a href="./posts/about.html">About <span class="sr-only">(current)</span></a></li>
-                    <li><a href="#">Blog</a></li>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
+      <a class="navbar-brand" href="http://moinabyssinia.github.io"><i class="fas fa-book"></i>                   Moin-Abyssinia</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                    <!-- mt: create a dropdown menu -->
-                    <!-- <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                      </ul>
-                    </li> -->
-                  </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./posts/about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
 
-                  <!-- mt: create a form -->
-                  <!-- <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Submit</button>
-                  </form> -->
-      
-                  <!-- mt: makes a new group of content for right side of the navbar -->
-                  <ul class="nav navbar-nav navbar-right">
-                    <!-- <li><a href="#">Sign Up</a></li> -->
-                    <li><a href="#">Contact</a></li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
 
-                    <!-- add icons -->
-                    <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
-                    <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
-                    <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
 
-                    <!-- mt: create a dropdown menu -->
-                    <!-- <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                      </ul>
-                    </li> -->
+        </ul>
 
-                  </ul>
-                </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
+        <!-- search bar -->
+        <!-- <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form> -->
+        
+        <!-- mt: makes a new group of content for right side of the navbar -->
+        <ul class="nav navbar-nav navbar-right">
+          <!-- <li><a href="#">Sign Up</a></li> -->
+          <!-- contact link -->
+          <!-- <li class="nav-item"><a  class="nav-link" href="#">Contact</a></li> -->
+
+          <!-- add icons -->
+          <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
+          <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
+          <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
+
+          <!-- mt: create a dropdown menu -->
+          <!-- <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+            </ul>
+          </li> -->
+
+        </ul>
+
+      </div>
     </nav>
 
 

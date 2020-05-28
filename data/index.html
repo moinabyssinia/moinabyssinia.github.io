@@ -15,9 +15,11 @@
   <script>
 
   // initialize the map
+  // in the setView the first two values are lat and lon
+  // the last number is the level of zoom
   var map = L.map('map', {
-    zoomSnap: 0.25
-  }).setView([0, 0], 2);
+    zoomDelta: 0.5
+  }).setView([20, 0], 2);
 
   // load a tile layer
   L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
@@ -26,10 +28,21 @@
 
 
 
-    // load GeoJSON from an external file
-    $.getJSON("20cr_lrreg_kfold.geojson",function(data){
+  // load GeoJSON from an external file
+  $.getJSON("20cr_lrreg_kfold.geojson",function(data){
+    var surgeIcon = L.icon({
+      iconUrl: 'icons8-tsunami-32.png',
+      iconSize: [30, 40], // size of the icon
+    });
+    
     // add GeoJSON layer to the map once the file is loaded
-    L.geoJson(data).addTo(map);
+    L.geoJson(data, {
+      pointToLayer: function(feature,latlng){
+        var marker = L.marker(latlng,{icon: surgeIcon});
+        marker.bindPopup(feature.properties.tg + '<br/>' + feature.properties.lon  + feature.properties.lat);
+        return marker;
+      }
+    }).addTo(map);
   });
  
 

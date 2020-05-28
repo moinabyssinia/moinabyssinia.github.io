@@ -31,15 +31,15 @@
   // load GeoJSON from an external file
   $.getJSON("20cr_lrreg_kfold.geojson",function(data){
     var surgeIcon = L.icon({
-      iconUrl: 'icons8-tsunami-48.png',
-      iconSize: [30, 40], // size of the icon
+      iconUrl: 'circle-48.png',
+      iconSize: [10, 10], // size of the icon
     });
     
     // add GeoJSON layer to the map once the file is loaded
     L.geoJson(data, {
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng,{icon: surgeIcon});
-        marker.bindPopup( "<dt><strong>Station Matadata:</strong></dt>" + '<br/>' +  "Station Name:  " +feature.properties.tg + '<br/>' + "Longitude:  " +feature.properties.lon  + '<br/>' + "Latitude:  " +feature.properties.lat + '<br/>' + "Correlation:  " +feature.properties.corrn + '<br/>' + "RMSE (m):  " +feature.properties.rmse);
+        marker.bindPopup( "<dt><h2>Station Metadata:</h2></dt>" + '<br/>' +  "<strong>Station Name:</strong>  " +feature.properties.tg + '<br/>' + "<strong>Longitude:</strong>  " +feature.properties.lon  + '<br/>' + "<strong>Latitude:</strong>  " +feature.properties.lat + '<br/>' + "<strong>Correlation:</strong>  " +feature.properties.corrn + '<br/>' + "<strong>RMSE (m):</strong>  " +feature.properties.rmse);
         return marker;
       }
     }).addTo(map);

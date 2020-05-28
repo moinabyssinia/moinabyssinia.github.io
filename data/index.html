@@ -31,7 +31,7 @@
   // load GeoJSON from an external file
   $.getJSON("20cr_lrreg_kfold.geojson",function(data){
     var surgeIcon = L.icon({
-      iconUrl: 'icons8-tsunami-32.png',
+      iconUrl: 'icons8-tsunami-48.png',
       iconSize: [30, 40], // size of the icon
     });
     
@@ -39,7 +39,7 @@
     L.geoJson(data, {
       pointToLayer: function(feature,latlng){
         var marker = L.marker(latlng,{icon: surgeIcon});
-        marker.bindPopup(feature.properties.tg + '<br/>' + feature.properties.lon  + feature.properties.lat);
+        marker.bindPopup( "<dt><strong>Station Matadata:</strong></dt>" + '<br/>' +  "Station Name:  " +feature.properties.tg + '<br/>' + "Longitude:  " +feature.properties.lon  + '<br/>' + "Latitude:  " +feature.properties.lat + '<br/>' + "Correlation:  " +feature.properties.corrn + '<br/>' + "RMSE (m):  " +feature.properties.rmse);
         return marker;
       }
     }).addTo(map);

@@ -1,0 +1,20 @@
+.navbar {
+    background: cadetblue;
+}
+
+#header {
+    background: url(https://live.staticflickr.com/7896/44621306950_0863c78a5b_b.jpg) center center / cover no-repeat;
+
+}
+
+#header  h1,p {
+    color: white;
+}
+
+img{
+    width: 100%;
+}
+
+#gallery h5, p {
+    color: black;
+}

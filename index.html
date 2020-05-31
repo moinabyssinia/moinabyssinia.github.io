@@ -25,74 +25,56 @@
     <!-- to change color use navbar-inverse -->
     <!-- mt: to fix the navbar in place, use navbar-fixed-top -->
     <!-- mt: navbar might block content -> use padding top for the body -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-fixed-top">
-      <a class="navbar-brand" href="http://moinabyssinia.github.io"><i class="fas fa-book"></i>                   Moin-Abyssinia</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- making the navbar -->
+    <!-- fixed-top - to fix navbar at the top -->
+    <nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+        <a href="https://moinabyssinia.github.io/" class="navbar-brand main-brand"><i class="fas fa-book mr-2"></i>Moin-Abyssinia</a>
+        <!-- making the toggler - hamburger  - match data-targe with id (under toggler)-->
+        <!-- aria-label = "Toggle-navigation" is for accessibility/for screen reader -->
+        <button class="navbar-toggler" data-toggle = "collapse" data-target = "#navLinks" aria-label="Toggle-navigation">   
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./posts/aboutMe.html">About <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./blog/blog.html">Research</a>
-          </li>
-
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li> -->
-
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
-
-        </ul>
-
-        <!-- search bar -->
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-        
-        <!-- mt: makes a new group of content for right side of the navbar -->
-        <ul class="nav navbar-nav navbar-right">
-          <!-- <li><a href="#">Sign Up</a></li> -->
-          <!-- contact link -->
-          <!-- <li class="nav-item"><a  class="nav-link" href="#">Contact</a></li> -->
-
-          <!-- add icons -->
-          <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
-          <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
-          <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
-
-          <!-- mt: create a dropdown menu -->
-          <!-- <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+        <!-- stuff that will be collapsed -->
+        <div class="collapse navbar-collapse" id="navLinks">
+            <!-- mr-auto will put the chosen object to the left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="./posts/aboutMe.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a href="./blog/blog.html" class="nav-link">Research</a>
+                </li>
             </ul>
-          </li> -->
 
-        </ul>
-
-      </div>
+            <!-- mt: makes a new group of content for right side of the navbar -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="#">Sign Up</a></li> -->
+                <!-- contact link -->
+                <!-- <li class="nav-item"><a  class="nav-link" href="#">Contact</a></li> -->
+    
+                <!-- add icons -->
+                <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
+                <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
+    
+                <!-- mt: create a dropdown menu -->
+                <!-- <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+                </li> -->
+    
+            </ul>
+        </div>
     </nav>
 
 

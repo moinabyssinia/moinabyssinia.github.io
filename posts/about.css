@@ -3,18 +3,28 @@
     padding-top: 75px;
 } */
 
-.description {
-    line-height: 1.84em;
-    text-align: justify;
-    font-size: 25px;
-    font-family: 'Mukta Malar';
+body {
+    /* background: #f5d9df; */
 }
 
-
-span {
-    text-align: right;
+#mainNavbar .main-brand{
+    color: rgba(255,255,255,.5);
 }
 
-.jumbotron {
-    padding: 20px;
+/* highlighting when hoverd */
+#mainNavbar .main-brand:hover{
+    color: white;
+    /* background: purple' */
 }
+#mainNavbar .nav-link:hover{
+    color: white;
+}
+
+.content {
+    padding-top: 75px;
+}
+
+/* .img1 {
+    width: 400px;
+    object-fit: cover;
+} */

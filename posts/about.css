@@ -23,8 +23,14 @@ body {
 .content {
     padding-top: 75px;
 }
+.content p, ul {
+    line-height: 40px;
+    text-align: justify;
+}
+
 
 /* .img1 {
     width: 400px;
     object-fit: cover;
 } */
+

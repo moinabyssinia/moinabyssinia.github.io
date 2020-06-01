@@ -8,16 +8,22 @@ body {
 }
 
 #mainNavbar .main-brand{
-    color: rgba(255,255,255,.5);
+    color: black;
+}
+#navLinks .extra{
+    color: black;
 }
 
-/* highlighting when hoverd */
-#mainNavbar .main-brand:hover{
-    color: white;
+/* highlighting when hovered */
+#mainNavbar .main-brand:hover {
+    color: rgb(124, 165, 118);
     /* background: purple' */
 }
-#mainNavbar .nav-link:hover{
-    color: white;
+
+/* highlighting when hovered */
+#navLinks .extra:hover{
+    color:  rgb(124, 165, 118);
+    /* background: purple' */
 }
 
 .content {
@@ -34,3 +40,7 @@ body {
     object-fit: cover;
 } */
 
+/* to give color to navbar when user scrolls */
+.navbar.scrolled {
+    background: rgb(222,192,222);
+}

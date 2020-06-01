@@ -75,7 +75,7 @@
     <!-- fluid-container - it uses the grid system with row and col but it goes all the way across -->
     <!-- always use class row when using container -->
     <section class="container-fluid content">
-        <div class="row align-items-start">
+        <div class="row align-items-center justify-content-center">
             <div class="col-lg-6 pt-0">
                 <h2 class="text-center">Michael Getachew Tadesse</h2>
                 <hr>
@@ -92,8 +92,65 @@
         </div>
     </section>
     
+    <!-- second section -->
+    <!-- order is applied here -->
+    <section class="container-fluid">
+        <div class="row align-items-center content">
+            <div class="col-lg-6 order-2 order-md-1">
+                <!-- order class is to make it appear first or second -->
+                <img class="img-fluid img2" src="https://live.staticflickr.com/1952/44405376514_f832e62fed_b.jpg" alt="">
+            </div>
+            <div class="col-md-6 order-1 order-md-2">
+                <!-- by using row, we get 12 units of space -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-10">
+                        <h2 class="text-center">Machine Learning</h2>
+                        <div class="d-none d-lg-block">
+                            <p class="text-justify">I have experience on the following machine learning libraries:
+                                <ul>
+                                    <li>TensorFlow</li>
+                                    <li>Scikit-learn</li>
+                                    <li>SciPy</li>
+                                </ul>
+                            </p>
+                            <p>The application of machine learning in the context of time series analyis is one the current projects I am working on</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- third section -->
+    <section class="container-fluid">
+        <div class="row align-items-center content">
+            <div class="col-lg-6 order-1 order-md-1">
+                <!-- order class is to make it appear first or second -->
+                <img class="img-fluid img2" src="https://p1.pxfuel.com/preview/823/348/1016/waves-water-ocea-sea.jpg" alt="tides and waves">
+            </div>
 
+            <div class="col-md-6 order-1 order-md-2">
+                <!-- by using row, we get 12 units of space -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-10">
+                        <h2 class="text-center">Tides and Waves</h2>
+                        <div class="d-none d-lg-block">
+                            <p class="text-justify">My research involves the study of:
+                                <ul>
+                                    <li>Tides</li>
+                                    <li>Waves</li>
+                                    <li>Storm Surge</li>
+                                    <li>Extreme Sea Levels</li>
+                                    <li>Flood Risk Assessment</li>
+                                </ul>
+                            </p>
+                            <p>The application of machine learning in the context of time series analyis is one the current projects I am working on</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 

@@ -3,8 +3,13 @@
     padding-top: 75px;
 } */
 
-body {
-    /* background: #f5d9df; */
+p, li {
+    font-size: 1.25rem;
+    line-height: 60px;
+}
+
+.fascination {
+    background-color: rgb(131, 210, 235);
 }
 
 #mainNavbar .main-brand{

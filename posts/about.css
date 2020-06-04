@@ -8,8 +8,8 @@ p, li {
     line-height: 60px;
 }
 
-.fascination {
-    background-color: rgb(131, 210, 235);
+.fascination, .intro, .skills {
+    background-color: rgb(216, 215, 152);
 }
 
 #mainNavbar .main-brand{

@@ -44,8 +44,14 @@ hr {
 
 .nav-link {
     margin-right: 30px;
+    margin-left: 30px;
 }
 
-.nav-link[href = "./posts/about.html"] {
+/* .nav-link[href = "./posts/about.html"] {
     margin-left: 60px;
+} */
+
+.navbar-expand-md .navbar-nav .nav-link {
+    margin-right: 30px;
+    margin-left: 30px;
 }

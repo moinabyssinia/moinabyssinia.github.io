@@ -3,21 +3,21 @@
     padding-top: 75px;
 } */
 
-p, li {
+/* p, li {
     font-size: 1.25rem;
     line-height: 60px;
-}
+} */
 
 .fascination, .intro, .skills {
     background-color: rgb(216, 215, 152);
 }
 
-#mainNavbar .main-brand{
+/* #mainNavbar .main-brand{
     color: black;
 }
 #navLinks .extra{
     color: black;
-}
+} */
 
 /* highlighting when hovered */
 #mainNavbar .main-brand:hover {
@@ -29,6 +29,14 @@ p, li {
 #navLinks .extra:hover{
     color:  rgb(124, 165, 118);
     /* background: purple' */
+}
+
+.nav-link{
+    padding: 0px;
+}
+
+.navbar {
+    padding: .5rem 1rem;
 }
 
 .content {

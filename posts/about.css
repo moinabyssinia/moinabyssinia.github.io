@@ -8,9 +8,9 @@
     line-height: 60px;
 } */
 
-.fascination, .intro, .skills {
+/* .fascination, .intro, .skills {
     background-color: rgb(216, 215, 152);
-}
+} */
 
 /* #mainNavbar .main-brand{
     color: black;
@@ -48,10 +48,12 @@
 }
 
 
-/* .img1 {
+.img1 {
     width: 400px;
     object-fit: cover;
-} */
+    /* margin: 0 auto; */
+    
+}
 
 /* to give color to navbar when user scrolls */
 /* transition is the speed the change happens */

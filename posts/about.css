@@ -48,7 +48,7 @@
 }
 
 
-.img1 {
+.img1 .img2 .img3{
     width: 400px;
     object-fit: cover;
     /* margin: 0 auto; */
@@ -70,4 +70,8 @@
 }
 .de {
     color: rgb(245, 18, 29);
+}
+
+.container{
+    width: 80%;
 }

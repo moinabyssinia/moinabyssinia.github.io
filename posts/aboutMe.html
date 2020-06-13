@@ -85,7 +85,7 @@
     <!-- adding sections -->
     <!-- fluid-container - it uses the grid system with row and col but it goes all the way across -->
     <!-- always use class row when using container -->
-    <section class="container-fluid content">
+    <section class="container content">
         <div class="row align-items-center">
             <div class="col-md-6 pt-0 intro">
                 <h2 class="text-center"> <span class="en">Welcome</span>  - 
@@ -94,10 +94,7 @@
                 <!-- to hide it when we hit mobile size - use commented below -->
                 <!-- <div class="d-none d-sm-block"> -->
                 <div class="">
-                    <p class="text-justify">I am Michael, a continuous learner with some experience in roads and bridges construction & maintenance, coastal flood hazard/risk assessment, statistical modeling, machine learning, deep learning, data visualization and automation, and web development.
-                        
-                        with some experience on statistical and machine learning, and web development. I do research on the following areas:
-                    </p>
+                    <p class="text-justify">I am Michael, a continuous learner with some experience in roads and bridges construction & maintenance, coastal flood hazard/risk assessment, statistical modeling, machine learning, deep learning, data visualization and automation, and web development.</p>
                     <div class="d-none d-sm-block">
                             <ul>
                                 <li>Tides and waves</li>
@@ -118,7 +115,9 @@
     
     <!-- second section -->
     <!-- order is applied here -->
-    <section class="container-fluid">
+    <!-- container-fluid makes it stretch -->
+    <!-- <section class="container-fluid"> -->
+    <section class="container">
         <div class="row align-items-center content">
             <div class="col-sm-6 order-2 order-md-1">
                 <!-- order class is to make it appear first or second -->
@@ -130,7 +129,8 @@
                     <div class="col-lg-12 col-12">
                         <h2 class="text-center">Things that fascinate me</h2>
                         <hr>
-                        <div class="d-none d-sm-block">
+                        <!-- <div class="d-none d-sm-block"> -->
+                        <div class="d-sm-block">
                                 <ul>
                                     <li>Machine Learning</li>
                                     <li>Time Series Analysis</li>
@@ -150,7 +150,7 @@
     </section>
 
     <!-- third section -->
-    <section class="container-fluid">
+    <section class="container">
         <div class="row align-items-center content">
             <div class="col-sm-6 order-2 order-md-2 ">
                 <!-- order class is to make it appear first or second -->
@@ -161,9 +161,9 @@
                 <!-- by using row, we get 12 units of space -->
                 <div class="row justify-content-center">
                     <div class="col-lg-12 col-12">
-                        <h2 class="text-center">Tides and Waves</h2>
+                        <h2 class="text-center">Research Interests</h2>
                         <hr>
-                        <div class="d-none d-sm-block">
+                        <div class="d-sm-block">
                             <p>My research involves the study of:
                                 <ul>
                                     <li>Tides</li>
@@ -173,7 +173,7 @@
                                     <li>Flood Risk Assessment</li>
                                 </ul>
                             </p>
-                            <p>The application of machine learning in the context of time series analyis is one the current projects I am working on</p>
+                            <p>The application of machine learning in the context of time series analyis is one the current projects I am working on. Check out my <a href="https://moinabyssinia.github.io/blog/blog.html">recent projects and publications</a>.</p>
                         </div>
                     </div>
                 </div>

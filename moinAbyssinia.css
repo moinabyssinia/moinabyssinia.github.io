@@ -55,3 +55,38 @@ hr {
     margin-right: 30px;
     margin-left: 30px;
 }
+/* The dropdown container */
+.drop-down {
+    float: left;
+    overflow: hidden;
+  }
+  /* Dropdown button */
+.drop-down .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+
+  /* Add a red background color to navbar links on hover */
+.navbar a:hover, .drop-down:hover .dropbtn {
+    background-color: red;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  /* Show the dropdown menu on hover */
+.dropdown-content:hover .dropdown-content {
+    display: block;
+  }

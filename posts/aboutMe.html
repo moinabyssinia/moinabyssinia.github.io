@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" 
     crossorigin="anonymous">
     <!-- add stylesheet -->
-    <link rel="stylesheet" type="text/css"  href="about.css">
+    <link rel="stylesheet" type="text/css"  href="aboutPage.css">
     <!-- adding font family -->
     <link href="https://fonts.googleapis.com/css2?family=Mukta+Malar&display=swap" rel="stylesheet">
     <!-- adding font awesome link -->
@@ -31,56 +31,23 @@
 <body>
 
     <!-- making the navbar -->
-    <!-- fixed-top - to fix navbar at the top -->
-    <nav id="mainNavbar" class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
-        <a href="https://moinabyssinia.github.io/" class="navbar-brand main-brand"><i class="fas fa-book mr-2"></i>Moin-Abyssinia</a>
-        <!-- making the toggler - hamburger  - match data-targe with id (under toggler)-->
-        <!-- aria-label = "Toggle-navigation" is for accessibility/for screen reader -->
-        <button class="navbar-toggler" data-toggle = "collapse" data-target = "#navLinks" aria-label="Toggle-navigation">   
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- stuff that will be collapsed -->
-        <div class="collapse navbar-collapse" id="navLinks">
-            <!-- mr-auto will put the chosen object to the left -->
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a href="aboutMe.html" class="nav-link extra">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="" class="nav-link extra">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="../blog/blog.html" class="nav-link extra">Research</a>
-                </li>
-            </ul>
-
-            <!-- mt: makes a new group of content for right side of the navbar -->
-            <ul class="nav navbar-nav navbar-right">
-                <!-- <li><a href="#">Sign Up</a></li> -->
-                <!-- contact link -->
-                <!-- <li class="nav-item"><a  class="nav-link" href="#">Contact</a></li> -->
-    
+    <div class="wrapper">
+        <div class="topnav">
+            <a href="https://moinabyssinia.github.io/"><i class="fas fa-book mr-2"></i>      Moin-Abyssinia</a>
+            <a href="aboutMe.html">About</a>
+            <a href="../projects/project.html">Projects</a>
+            <a href="../blog/blog.html">Research</a>
+            <a href="#">Contact</a>
+                
+            <div class="topnav-right">
                 <!-- add icons -->
                 <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
                 <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
                 <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
-    
-                <!-- mt: create a dropdown menu -->
-                <!-- <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
-                </li> -->
-    
-            </ul>
-        </div>
-    </nav>
+            </div>  
+        </div>        
+    </div>
+
 
     <!-- adding sections -->
     <!-- fluid-container - it uses the grid system with row and col but it goes all the way across -->
@@ -94,7 +61,7 @@
                 <!-- to hide it when we hit mobile size - use commented below -->
                 <!-- <div class="d-none d-sm-block"> -->
                 <div class="">
-                    <p class="text-justify">I am Michael, a continuous learner with some experience in roads and bridges construction & maintenance, coastal flood hazard/risk assessment, statistical modeling, machine learning, deep learning, data visualization and automation, and web development.</p>
+                    <p class="text-justify">I am Michael Getachew Tadesse, a continuous learner with some experience in roads and bridges construction & maintenance, coastal flood hazard/risk assessment, statistical modeling, machine learning, deep learning, data visualization and automation, and web development.</p>
 
                 </div>
             </div>
@@ -179,6 +146,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+   
+   <script src="about.js"></script>
+   
     <!-- <script>
         $(function () {
             $(document).scroll(function() {

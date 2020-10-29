@@ -29,18 +29,11 @@
 </head>
 <body>
     
-    <!-- make navbar -->
-    <!-- can change navbar bg by removing bg-dark and replacing it in the css -->
-    <nav class="navbar navbar-dark">
-        <!-- create a container for the navbar not to stick to the edge -->
-        <div class="container">
-            <a href="http://moinabyssinia.github.io" class="navbar-brand"><i class="fas fa-water mr-3"></i>Home</a>
-        </div>
-    </nav>
+
 
     
     <!-- jumbotron -->
-    <section id="header" class="jumbotron text-center"> 
+    <section id="header" class="jumbotron text-center" style="margin-bottom: 5px;"> 
         <h1 class="display-3">Projects</h1>
         <p class="lead"></p>
 
@@ -48,6 +41,24 @@
         <!-- <a class="btn btn-primary" href="">Do Something</a>
         <a class="btn btn-success" href="">Another Thing</a> -->
     </section>
+
+    <!-- make navbar -->
+    <div class="wrapper">
+        <div class="topnav">
+            <a href="https://moinabyssinia.github.io/"><i class="fas fa-book mr-2"></i>      Moin-Abyssinia</a>
+            <a href="../posts/aboutMe.html">About</a>
+            <a href="project.html">Projects</a>
+            <a href="../blog/blog.html">Research</a>
+            <a href="#">Contact</a>
+                
+            <div class="topnav-right">
+                <!-- add icons -->
+                <a class="navbar-brand" href="https://github.com/moinabyssinia"><i class="fab fa-github"></i></a>
+                <a class="navbar-brand" href="https://www.linkedin.com/in/michaeltadesse/"><i class="fab fa-linkedin"></i></a>
+                <a class="navbar-brand" href="https://twitter.com/MichaelTadess17"><i class="fab fa-twitter"></i></a>
+            </div>  
+        </div>        
+    </div>
 
     <!-- adding cards with images -->
     <section id="gallery">
@@ -138,6 +149,8 @@
 
         </div>
     </section>
+
+       <script src="project.js"></script>
 
 
     <!-- jQuery first, then popper.js, then bootstrap JS -->

@@ -48,6 +48,7 @@ img{
     height: 400px;
 }
 
+/* use the following for new sticky navbar */
 .topnav {
     background-color:#212529;
     overflow: hidden;

@@ -4,6 +4,7 @@
 
 #header {
     background: url(https://live.staticflickr.com/7896/44621306950_0863c78a5b_b.jpg) center center / cover no-repeat;
+    height: 230px;
 
 }
 
@@ -41,3 +42,45 @@ img{
 .lead {
     color: white;
 }
+
+/* use the following for new sticky navbar */
+.topnav {
+    background-color:#212529;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.fixed-nav .wrapper{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    /* box-shadow: 0 5px rgba(0,0,0,0.1); */
+  }

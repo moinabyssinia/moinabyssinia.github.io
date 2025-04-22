@@ -15,12 +15,14 @@
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | default: site.github.repository_name }}</h1>
+          <h1>{{ site.title }}</h1>
         </a>
-        
+
         <section id = "pages">
           {%- for page in site.pages -%}
-            <a href="{{ page.url }}"> {{ page.title | escape}}</a>&nbsp; 
+            {%- if page.nav and page.title -%}
+            <a href="{{ page.url | relative_url }}"> {{ page.title | escape}}</a>&nbsp;
+            {%- endif -%}
           {%- endfor -%}
 
       </section>

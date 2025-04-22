@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Resume
+nav: true
 permalink: /resume/
 ---
 
